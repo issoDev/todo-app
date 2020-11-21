@@ -7,6 +7,8 @@ const colors = {
   yellow: '#ffd803',
   lightblue: '##bae8e8',
   whiteblue: '#e3f6f5',
+  crimson: '#ff6b81',
+  secondary: "#22a6b3"
 }
 
 export const styles = StyleSheet.create({
@@ -61,16 +63,46 @@ export const styles = StyleSheet.create({
     alignItems: "center"
   },
   headerTitle: {
-    fontSize: 19.5,
+    fontSize: 18.5,
     fontWeight: "bold",
     color: colors.blue
   },
   headerText: {
-    fontSize: 18,
+    fontSize: 16,
     fontWeight: "500",
     color: colors.blue
   },
 
   // TodoListSection.js StyleSheet
-  
+  todoListcontainer: {
+    padding: 15,
+    backgroundColor: colors.white,
+    borderLeftWidth: 4,
+    borderColor: colors.whiteblue,
+    marginHorizontal: 25, 
+    marginBottom: 25,
+    borderRadius: 5,
+    // shadow only with ios
+    shadowColor: colors.blue,
+    shadowOffset: { width:0, height: 2},
+    shadowRadius: 6,
+    shadowOpacity: 0.26,
+    backgroundColor: colors.white,
+    // shodow only with android
+    elevation: 5
+  },
+  todoItemStyle: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center'
+  },
+  todoItemTextStyle: {
+    fontSize: 18,
+    color: colors.blue
+  },
+  todoItemRemove: {
+    color: colors.blue,
+    fontWeight: "600",
+    fontSize: 17.5
+  }
 });
