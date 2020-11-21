@@ -4,6 +4,7 @@ export const styles = {
   blue: '#272343',
   yellow: '#ffd803',
   lightblue: '##bae8e8',
+  whiteblue: '#e3f6f5',
 
   // App.js StyleSheet
   appContainer: {
