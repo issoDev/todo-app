@@ -31,4 +31,23 @@ export const styles = {
     textAlign: "center",
     color: colors.blue
   },
+
+  // InputSection.js StyleSheet
+  inputContainer: {
+    height: "25%",
+    width: "100%",
+    flexDirection: "row",
+    backgroundColor: colors.lightGrey,
+    justifyContent: "center",
+    alignItems: "center",
+    marginBottom: 50
+  },
+  textInput: {
+    borderBottomWidth: 2,
+    height: 40,
+    width: "50%",
+    marginRight: 15,
+    padding: 5,
+    fontSize: 19
+  }
 }
