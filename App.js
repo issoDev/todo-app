@@ -1,11 +1,12 @@
 import React from 'react';
-import { Text, View, SafeAreaView } from 'react-native';
+import { Text, SafeAreaView } from 'react-native';
+import InputSection from './components/InputSection';
 import { styles } from './styles/styles'
 
 export default function App() {
   return (
     <SafeAreaView style={styles.appContainer}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <InputSection></InputSection>
     </SafeAreaView>
   );
 }

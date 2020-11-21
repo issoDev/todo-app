@@ -26,28 +26,29 @@ export const styles = {
     alignItems: "center"
   },
   textCustomButton: {
-    fontWeight: "bold",
-    fontSize: 18,
+    fontWeight: "700",
+    fontSize: 22,
     textAlign: "center",
     color: colors.blue
   },
 
   // InputSection.js StyleSheet
   inputContainer: {
-    height: "25%",
+    height: "20%",
     width: "100%",
     flexDirection: "row",
-    backgroundColor: colors.lightGrey,
+    backgroundColor: colors.whiteblue,
     justifyContent: "center",
     alignItems: "center",
     marginBottom: 50
   },
   textInput: {
-    borderBottomWidth: 2,
+    borderWidth: 2,
     height: 40,
-    width: "50%",
-    marginRight: 15,
-    padding: 5,
-    fontSize: 19
+    width: "55%",
+    marginRight: 10,
+    padding: 9,
+    fontSize: 17,
+    borderRadius: 5,
   }
 }
