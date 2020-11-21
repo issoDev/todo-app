@@ -1,10 +1,12 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
+import CustomButton from './CustomButton'
 
 export default function InputSection() {
   return (
-    <View>
-      <Text></Text>
+    <View style={styles.container}>
+      <TextInput placeholder="ajouter une tâche" />
+      <CustomButton title="ajouter"></CustomButton>
     </View>
   )
 }
