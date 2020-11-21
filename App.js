@@ -6,6 +6,7 @@ import { todolist } from './data/todolist'
 import Header from './components/Header';
 import InputSection from './components/InputSection';
 import TodoListSection from './components/TodoListSection'
+import SearchSection from './components/SearchSection';
 
 export default function App() {
   // states
@@ -13,7 +14,8 @@ export default function App() {
   return (
     <SafeAreaView style={styles.appContainer}>
       <Header/>
-      <InputSection/>
+      <InputSection />
+      <SearchSection />
       <FlatList 
         keyExtractor={item => item.id}
         data={todolist}

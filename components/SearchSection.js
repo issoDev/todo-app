@@ -1,12 +1,15 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { TextInput, View } from 'react-native'
+import { styles } from '../styles/styles'
 
 export default function SearchSection() {
   return (
-    <View>
-      <Text></Text>
+    <View style={styles.searchInputContainer}>
+      <TextInput 
+        style={styles.searchInput}
+        placeholder="chercher une tâche" 
+      />
     </View>
   )
 }
 
-const styles = StyleSheet.create({})

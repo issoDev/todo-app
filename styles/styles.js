@@ -40,12 +40,11 @@ export const styles = StyleSheet.create({
     backgroundColor: colors.whiteblue,
     justifyContent: "center",
     alignItems: "center",
-    marginBottom: 50
   },
   textInput: {
     borderWidth: 2,
     height: 40,
-    width: "55%",
+    width: "65%",
     marginRight: 10,
     padding: 9,
     fontSize: 17,
@@ -104,5 +103,22 @@ export const styles = StyleSheet.create({
     color: colors.blue,
     fontWeight: "600",
     fontSize: 17.5
+  },
+
+  // SearchSection.js StyleSheet
+  searchInputContainer: {
+    height: '10%',
+    width: '100%',
+    marginBottom: 20,
+    justifyContent: "center",
+    alignItems: "center"
+  },
+  searchInput: {
+    borderWidth: 1.5,
+    height: 34,
+    width: '55%',
+    fontSize: 15,
+    borderRadius: 5,
+    padding: 5
   }
 });
