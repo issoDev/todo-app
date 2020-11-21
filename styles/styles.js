@@ -26,7 +26,7 @@ export const styles = {
     alignItems: "center"
   },
   textCustomButton: {
-    fontSize: 16,
+    fontSize: 13,
     textAlign: "center"
   },
 
