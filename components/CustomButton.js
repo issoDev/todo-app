@@ -1,15 +1,15 @@
 import React from 'react'
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
+import { Text, View, TouchableOpacity } from 'react-native'
+import { styles } from '../styles/styles'
 
 export default function CustomButton() {
   return (
     <TouchableOpacity activeOpacity={0.5}>
-      <View>
-        <Text> Ajouter </Text>
+      <View style={styles.customButton}>
+        <Text style={styles.textCustomButton}> Ajouter </Text>
       </View>
     </TouchableOpacity>
     
   )
 }
 
-const styles = StyleSheet.create({})
