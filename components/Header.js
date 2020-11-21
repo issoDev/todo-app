@@ -2,11 +2,11 @@ import React from 'react'
 import { Text, View } from 'react-native'
 import { styles } from '../styles/styles'
 
-export default function Header() {
+export default function Header({ todosLength }) {
   return (
     <View style={styles.headerContainer}>
       <Text style={styles.headerTitle}>MY TODO APP 📝</Text>
-      <Text style={styles.headerText}>0 tâche(s) à faire</Text>
+      <Text style={styles.headerText}>{todosLength} tâche(s) à faire</Text>
     </View>
   )
 }

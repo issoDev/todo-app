@@ -8,7 +8,8 @@ export default function InputSection() {
     <View style={styles.inputContainer}>
       <TextInput 
         style={styles.textInput}
-        placeholder="ajouter une tâche ..." />
+        placeholder="ajouter une tâche ..." 
+      />
       <CustomButton title="➕"></CustomButton>
     </View>
   )

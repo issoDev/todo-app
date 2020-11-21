@@ -10,10 +10,16 @@ import SearchSection from './components/SearchSection';
 
 export default function App() {
   // states
-  const [todos, setTodos] = useState(todolist)
+  const [todos, setTodos] = useState(todolist);
+
+  //functions
+  const addTodo = () => {
+    
+  }
+
   return (
     <SafeAreaView style={styles.appContainer}>
-      <Header/>
+      <Header todosLength={todos.length} />
       <InputSection />
       <SearchSection />
       <FlatList 
