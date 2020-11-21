@@ -26,10 +26,8 @@ export const styles = {
     alignItems: "center"
   },
   textCustomButton: {
-    fontWeight: "700",
-    fontSize: 22,
-    textAlign: "center",
-    color: colors.blue
+    fontSize: 16,
+    textAlign: "center"
   },
 
   // InputSection.js StyleSheet

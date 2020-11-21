@@ -9,7 +9,7 @@ export default function InputSection() {
       <TextInput 
         style={styles.textInput}
         placeholder="ajouter une tâche ..." />
-      <CustomButton title="+"></CustomButton>
+      <CustomButton title="➕"></CustomButton>
     </View>
   )
 }
