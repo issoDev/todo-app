@@ -1,4 +1,4 @@
-import { Platform, StatusBar } from 'react-native';
+import { Platform, StatusBar, StyleSheet } from 'react-native';
 
 const colors = {
   // App colors
@@ -9,7 +9,7 @@ const colors = {
   whiteblue: '#e3f6f5',
 }
 
-export const styles = {
+export const styles = StyleSheet.create({
   // App.js StyleSheet
   appContainer: {
     flex: 1,
@@ -48,6 +48,26 @@ export const styles = {
     padding: 9,
     fontSize: 17,
     borderRadius: 5,
-    backgroundColor: colors.white
+    backgroundColor: colors.white,
+    borderColor: colors.blue
+  },
+
+  // Header.js StyleSheet
+  headerContainer: {
+    height: "8%",
+    paddingHorizontal: 20,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center"
+  },
+  headerTitle: {
+    fontSize: 19.5,
+    fontWeight: "bold",
+    color: colors.blue
+  },
+  headerText: {
+    fontSize: 18,
+    fontWeight: "500",
+    color: colors.blue
   }
-}
+});
