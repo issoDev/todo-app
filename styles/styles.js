@@ -48,5 +48,6 @@ export const styles = {
     padding: 9,
     fontSize: 17,
     borderRadius: 5,
+    backgroundColor: colors.white
   }
 }
