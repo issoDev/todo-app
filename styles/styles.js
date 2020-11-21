@@ -1,3 +1,5 @@
+import { Platform, StatusBar } from 'react-native';
+
 const colors = {
   // App colors
   white: '#fffffe',
@@ -11,9 +13,7 @@ export const styles = {
   // App.js StyleSheet
   appContainer: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
   },
 
   // CustomButton.js StyleSheet
