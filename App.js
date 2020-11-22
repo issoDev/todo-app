@@ -17,9 +17,16 @@ export default function App() {
   const [editMode, setEditMode] = useState(false);
 
   //functions
+  /* add a todo */
   const addTodo = todo => {
     setTodos(prev => {
       return [...prev, { id: uuid(), todo }]
+    })
+  }
+  /* delete a todo */
+  const deleteTodo = todoId => {
+    setTodos(prev => {
+      return prev.filter(t => t.id !== todoId)
     })
   }
 
@@ -29,7 +36,7 @@ export default function App() {
       <InputSection 
         inputText={inputText}
         setInputText={setInputText}
-        addTodo={addTodo} 
+        addTodo={addTodo}
       />
       <SearchSection />
       <FlatList 
@@ -37,7 +44,11 @@ export default function App() {
         data={todos}
         renderItem={({ item }) => {
           return(
-            <TodoListSection todoItem={item.todo} todoId={item.id} />
+            <TodoListSection 
+              todoItem={item.todo} 
+              todoId={item.id} 
+              deleteTodo={deleteTodo}
+            />
           )
         }}
       />
