@@ -10,7 +10,7 @@ export default function InputSection({ inputText, setInputText, addTodo }) {
   }
 
   return (
-    <View style={styles.inputContainer}>
+    <View style={ styles.inputContainer }>
       <TextInput 
         style={styles.textInput}
         placeholder="ajouter une tâche ..." 
@@ -21,6 +21,7 @@ export default function InputSection({ inputText, setInputText, addTodo }) {
         title="➕"
         inputText={inputText}
         addTodo={addTodo}
+        disabled={ inputText.length <= 0 }
       />
     </View>
   )
