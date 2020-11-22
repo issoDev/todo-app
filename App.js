@@ -29,6 +29,11 @@ export default function App() {
       return prev.filter(t => t.id !== todoId)
     })
   }
+  /* edit a todo */
+  const editTodo = todo => {
+    setInputText(todo)
+    console.log(todo);
+  }
 
   return (
     <SafeAreaView style={styles.appContainer}>
@@ -48,6 +53,7 @@ export default function App() {
               todoItem={item.todo} 
               todoId={item.id} 
               deleteTodo={deleteTodo}
+              editTodo={editTodo}
             />
           )
         }}
