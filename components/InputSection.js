@@ -21,7 +21,7 @@ export default function InputSection({ inputText, setInputText, addTodo }) {
         title="➕"
         inputText={inputText}
         addTodo={addTodo}
-        disabled={ inputText.length <= 0 }
+        disabled={ inputText.length <= 3 }
       />
     </View>
   )
