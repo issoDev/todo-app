@@ -1,15 +1,6 @@
 import { Platform, StatusBar, StyleSheet } from 'react-native';
+import { colors } from './colors';
 
-const colors = {
-  // App colors
-  white: '#fffffe',
-  blue: '#272343',
-  yellow: '#ffd803',
-  lightblue: '##bae8e8',
-  whiteblue: '#e3f6f5',
-  crimson: '#ff6b81',
-  secondary: "#22a6b3"
-}
 
 export const styles = StyleSheet.create({
   // App.js StyleSheet
@@ -20,8 +11,8 @@ export const styles = StyleSheet.create({
 
   // CustomButton.js StyleSheet
   customButton: {
-    padding: 15,
     backgroundColor: colors.yellow,
+    padding: 15,
     borderRadius: 5,
     height: 40,
     justifyContent: "center",
