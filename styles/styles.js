@@ -11,7 +11,7 @@ export const styles = StyleSheet.create({
 
   // CustomButton.js StyleSheet
   customButton: {
-    backgroundColor: colors.yellow,
+    // backgroundColor: colors.yellow,
     padding: 15,
     borderRadius: 5,
     height: 40,

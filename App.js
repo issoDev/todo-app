@@ -14,6 +14,7 @@ export default function App() {
   // states
   const [todos, setTodos] = useState(todolist);
   const [inputText, setInputText ] = useState('');
+  const [editMode, setEditMode] = useState(false);
 
   //functions
   const addTodo = todo => {
