@@ -11,7 +11,11 @@ export const styles = StyleSheet.create({
 
   // CustomButton.js StyleSheet
   customButton: {
-    // backgroundColor: colors.yellow,
+    shadowColor: colors.blue,
+    shadowOffset: { width:0, height: 2},
+    shadowRadius: 5,
+    shadowOpacity: 0.3,
+    elevation: 5,
     padding: 15,
     borderRadius: 5,
     height: 40,
@@ -91,6 +95,13 @@ export const styles = StyleSheet.create({
     color: colors.blue
   },
   todoItemRemove: {
+    backgroundColor: colors.white,
+    shadowColor: colors.blue,
+    shadowOffset: { width:0, height: 2},
+    shadowRadius: 5,
+    shadowOpacity: 0.3,
+    elevation: 5,
+    padding: 6,
     color: colors.blue,
     fontWeight: "600",
     fontSize: 17.5
