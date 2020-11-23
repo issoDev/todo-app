@@ -3,10 +3,11 @@ import { Text, View, TouchableOpacity } from 'react-native'
 import { colors } from '../styles/colors'
 import { styles } from '../styles/styles'
 
-export default function CustomButton({ title, addTodo, inputText, disabled, color = colors.yellow }) {
+export default function CustomButton({ title, addTodo, inputText, disabled, setEditMode }) {
   // functions
   const addOneTodo = () => {
     inputText.length > 3 ? addTodo(inputText) : null;
+    setEditMode(false);
   }
   const buttonColor = () => {
     if (disabled) {

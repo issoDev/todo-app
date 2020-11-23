@@ -3,10 +3,17 @@ import {View, TextInput } from 'react-native'
 import { styles } from '../styles/styles'
 import CustomButton from './CustomButton'
 
-export default function InputSection({ inputText, setInputText, addTodo }) {
+export default function InputSection({ inputText, setInputText, addTodo, editMode, setEditMode }) {
   // functions
   const newTodo = text => {
     setInputText(text);
+  }
+  const editTheMode = () => {
+    if (editMode === false) {
+      return "➕";
+    } else {
+        return "✏️";
+    }
   }
 
   return (
@@ -18,10 +25,11 @@ export default function InputSection({ inputText, setInputText, addTodo }) {
         onChangeText={newTodo}
       />
       <CustomButton 
-        title="➕"
+        title={editTheMode()}
         inputText={inputText}
         addTodo={addTodo}
         disabled={ inputText.length <= 3 }
+        setEditMode={setEditMode}
       />
     </View>
   )

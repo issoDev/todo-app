@@ -21,7 +21,8 @@ export default function App() {
   const addTodo = todo => {
     setTodos(prev => {
       return [...prev, { id: uuid(), todo }]
-    })
+    });
+    setInputText('');
   }
   /* delete a todo */
   const deleteTodo = todoId => {
@@ -31,8 +32,8 @@ export default function App() {
   }
   /* edit a todo */
   const editTodo = todo => {
-    setInputText(todo)
-    console.log(todo);
+    setInputText(todo);
+    setEditMode(true);
   }
 
   return (
@@ -42,6 +43,8 @@ export default function App() {
         inputText={inputText}
         setInputText={setInputText}
         addTodo={addTodo}
+        editMode={editMode}
+        setEditMode={setEditMode}
       />
       <SearchSection />
       <FlatList 
