@@ -38,9 +38,13 @@ export default function App() {
   }
   /* search a todo */
   const searchTodo = (text) => {
-    const newArr = todos.filter(t => t.todo.includes(text));
-    setTodos(newArr);
-    console.log(newArr);
+    if (condition) {
+      const newArr = todos.filter(t => t.todo.includes(text));
+      setTodos(newArr);
+      console.log(newArr);
+    } else {
+      return;
+    } 
   }
 
 
