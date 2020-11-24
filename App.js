@@ -16,6 +16,9 @@ export default function App() {
   const [inputText, setInputText ] = useState('');
   const [searchText, setSearchText ] = useState('');
   const [editMode, setEditMode] = useState(false);
+  const filteredTodos = todos.filter(t => {
+    return t.todo.toLowerCase().includes(searchText.toLowerCase())
+  });
 
   //functions
   /* add a todo */
@@ -36,17 +39,6 @@ export default function App() {
     setInputText(todo);
     setEditMode(true);
   }
-  /* search a todo */
-  const searchTodo = (text) => {
-    if (text) {
-      const newArr = todos.filter(t => t.todo.includes(text));
-      setTodos(newArr);
-      console.log(newArr);
-    } else {
-      return;
-    } 
-  }
-
 
   return (
     <SafeAreaView style={styles.appContainer}>
@@ -61,11 +53,10 @@ export default function App() {
       <SearchSection
         searchText={searchText} 
         setSearchText={setSearchText} 
-        searchTodo={searchTodo}
       />
       <FlatList 
         keyExtractor={item => item.id}
-        data={todos}
+        data={filteredTodos}
         renderItem={({ item }) => {
           return(
             <TodoListSection 
