@@ -10,9 +10,9 @@ export default function InputSection({ inputText, setInputText, addTodo, editMod
   }
   const editTheMode = () => {
     if (editMode === false) {
-      return "➕";
+      return "ajouter";
     } else {
-        return "✏️";
+        return "éditer";
     }
   }
 
