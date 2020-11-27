@@ -23,6 +23,8 @@ export default function InputSection({ inputText, setInputText, addTodo, editMod
         placeholder="ajouter une tâche ..." 
         value={inputText}
         onChangeText={newTodo}
+        autoCapitalize="none"
+        autoCorrect={false}
       />
       <CustomButton 
         title={editTheMode()}
