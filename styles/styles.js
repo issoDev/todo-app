@@ -118,7 +118,7 @@ export const styles = StyleSheet.create({
     alignItems: "center"
   },
   searchInput: {
-    borderWidth: 1.6,
+    borderWidth: 1.1,
     borderColor: colors.blue,
     height: 34,
     width: '55%',
