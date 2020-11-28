@@ -16,6 +16,7 @@ export default function App() {
   const [inputText, setInputText ] = useState('');
   const [searchText, setSearchText ] = useState('');
   const [editMode, setEditMode] = useState(false);
+  
   const filteredTodos = todos.filter(t => {
     return t.todo.toLowerCase().includes(searchText.toLowerCase())
   });
