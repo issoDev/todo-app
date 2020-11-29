@@ -12,7 +12,7 @@ export default function SearchSection({ searchText, setSearchText }) {
     <View style={styles.searchInputContainer}>
       <TextInput 
         style={styles.searchInput}
-        placeholder="chercher une tâche" 
+        placeholder="search task" 
         autoCapitalize="none"
         autoCorrect={false}
         value={searchText}

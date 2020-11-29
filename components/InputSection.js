@@ -10,9 +10,9 @@ export default function InputSection({ inputText, setInputText, addTodo, editMod
   }
   const editTheMode = () => {
     if (editMode === false) {
-      return "ajouter";
+      return "➕";
     } else {
-        return "éditer";
+        return "✏️";
     }
   }
 
@@ -20,7 +20,7 @@ export default function InputSection({ inputText, setInputText, addTodo, editMod
     <View style={ styles.inputContainer }>
       <TextInput 
         style={styles.textInput}
-        placeholder="ajouter une tâche ..." 
+        placeholder="add task" 
         value={inputText}
         onChangeText={newTodo}
         autoCapitalize="none"

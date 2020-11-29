@@ -23,10 +23,8 @@ export const styles = StyleSheet.create({
     alignItems: "center"
   },
   textCustomButton: {
-    fontSize: 16.5,
-    textAlign: "center",
-    color: colors.white,
-    fontWeight: "500"
+    fontSize: 14,
+    textAlign: "center"
   },
 
   // InputSection.js StyleSheet
@@ -78,13 +76,10 @@ export const styles = StyleSheet.create({
     marginHorizontal: 25, 
     marginBottom: 25,
     borderRadius: 5,
-    // shadow only with ios
     shadowColor: colors.blue,
     shadowOffset: { width:0, height: 2},
     shadowRadius: 6,
     shadowOpacity: 0.26,
-    backgroundColor: colors.white,
-    // shodow only with android
     elevation: 5
   },
   todoItemStyle: {
