@@ -7,13 +7,11 @@ In the project directory, you can run:
 
 #### `npm start`
 
-<!-- Here is a screenshot of the app below 👇: -->
+Here is a screenshot of the app below 👇:
 <br>
 <br>
 <br>
-<video controls>
-  <source 
-    src="./assets/app-preview.mp4"
-    type="video/mp4"
-  >
-</video>
+<img  
+  src="./assets/app-preview.jpg"
+  alt="the preview of the todo app"
+>
