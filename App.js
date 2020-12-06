@@ -11,17 +11,15 @@ import TodoListSection from './components/TodoListSection';
 import SearchSection from './components/SearchSection';
 
 export default function App() {
-  // states
   const [todos, setTodos] = useState(todolist);
   const [inputText, setInputText ] = useState('');
   const [searchText, setSearchText ] = useState('');
   const [editMode, setEditMode] = useState(false);
   
   const filteredTodos = todos.filter(t => {
-    return t.todo.toLowerCase().includes(searchText.toLowerCase())
+    return t.todo.toLowerCase().includes(searchText.toLowerCase());
   });
 
-  //functions
   /* add a todo */
   const addTodo = todo => {
     setTodos(prev => {

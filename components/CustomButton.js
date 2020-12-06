@@ -4,7 +4,6 @@ import { colors } from '../styles/colors'
 import { styles } from '../styles/styles'
 
 export default function CustomButton({ title, addTodo, inputText, disabled, setEditMode }) {
-  // functions
   const addOneTodo = () => {
     inputText.length > 3 ? addTodo(inputText) : null;
     setEditMode(false);

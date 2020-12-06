@@ -4,7 +4,6 @@ import { styles } from '../styles/styles'
 import CustomButton from './CustomButton'
 
 export default function InputSection({ inputText, setInputText, addTodo, editMode, setEditMode }) {
-  // functions
   const newTodo = text => {
     setInputText(text);
   }

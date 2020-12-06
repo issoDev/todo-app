@@ -3,7 +3,6 @@ import { TextInput, View, Button } from 'react-native'
 import { styles } from '../styles/styles'
 
 export default function SearchSection({ searchText, setSearchText }) {
-  // functions
   const search = text => {
     setSearchText(text);
   }
