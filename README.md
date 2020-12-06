@@ -11,4 +11,9 @@ In the project directory, you can run:
 <br>
 <br>
 <br>
-<video></video>
+<video controls>
+  <source 
+    src="./assets/app-preview.mp4"
+    type="video/mp4"
+  >
+</video>
