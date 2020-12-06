@@ -11,4 +11,4 @@ Here is a screenshot of the app below 👇:
 <br>
 <br>
 <br>
-<img src="./assets/app-preview.jpg" alt="the preview of the todo app" width="70" >
+<img src="./assets/app-preview.jpg" alt="the preview of the todo app" width="170" >
